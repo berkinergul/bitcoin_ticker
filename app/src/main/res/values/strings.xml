@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Bitcoin Ticker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="have_an_account">Already Have an Account?</string>
+    <string name="email">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="coins">Coins</string>
+    <string name="search">Search</string>
+    <string name="favourites">Favourites</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="error_text">Unexpected Error!</string>
+    <string name="search_title">Search by ID or symbol of Crypto</string>
+
+    <string-array name="refresh_intervals">
+        <item>24 Hour</item>
+        <item>7 Days</item>
+        <item>14 Days</item>
+        <item>30 Days</item>
+        <item>60 Days</item>
+        <item>200 Days</item>
+        <item>1 Year</item>
+    </string-array>
+
+</resources>
