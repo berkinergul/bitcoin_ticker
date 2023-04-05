@@ -24,8 +24,8 @@ class FavouritesAdapter(val favouritesList : List<CryptoDetailed>) : RecyclerVie
         holder.binding.txtCryptoPrice.text = favouritesList[position].marketData.currentPrice.turkishLiras.toString()
         holder.binding.cryptoImage.downloadFromUrl(favouritesList[position].image.large)
         holder.itemView.setOnClickListener {
-            val actionToDetailed = FavouritesFragmentDirections.actionFavouritesFragmentToDetailFragment()
-            Navigation.findNavController(it).navigate(actionToDetailed)
+            val actionToDetail = FavouritesFragmentDirections.actionFavouritesFragmentToDetailFragment(favouritesList[position].id)
+            Navigation.findNavController(it).navigate(actionToDetail)
         }
     }
 

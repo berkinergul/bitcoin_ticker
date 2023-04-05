@@ -15,6 +15,7 @@ import com.example.bitcointicker.util.downloadFromUrl
 import com.example.bitcointicker.viewmodel.DetailViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
@@ -38,8 +39,7 @@ class DetailFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         val refreshTimes = resources.getStringArray(R.array.refresh_intervals)
-        val refreshArrayAdapter =
-            ArrayAdapter(requireContext(), R.layout.dropdown_item, refreshTimes)
+        val refreshArrayAdapter = ArrayAdapter(requireContext(), R.layout.dropdown_item, refreshTimes)
         binding.refreshDropDown.setAdapter(refreshArrayAdapter)
     }
 
@@ -125,8 +125,6 @@ class DetailFragment : Fragment() {
             "coinPrice" to coinPrice,
             "coinURL" to coinURL
         )
-
-
 
         binding.btnFavouriteInDetail.setOnClickListener { v ->
             counter += 1

@@ -3,6 +3,7 @@ package com.example.bitcointicker.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.bitcointicker.model.Crypto
 import com.example.bitcointicker.model.CryptoDetailed
 import com.example.bitcointicker.service.CryptoAPI
 import kotlinx.coroutines.*
@@ -41,6 +42,8 @@ class DetailViewModel : ViewModel() {
         }
 
     }
+
+
 
     override fun onCleared() {
         super.onCleared()

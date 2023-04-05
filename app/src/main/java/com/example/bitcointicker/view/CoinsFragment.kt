@@ -118,6 +118,7 @@ class CoinsFragment : Fragment() {
                 val searchView = menuItem.actionView as SearchView
 
                 searchView.setIconifiedByDefault(false)
+                searchView.setQuery("",false)
                 searchView.queryHint = "Crypto name or symbol"
                 searchView.setOnQueryTextListener(object:SearchView.OnQueryTextListener{
                     override fun onQueryTextSubmit(query: String?): Boolean {
